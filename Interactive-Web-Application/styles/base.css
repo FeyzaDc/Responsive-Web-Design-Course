@@ -54,7 +54,7 @@ ul {
 
 .container {
     padding: 80px 150px 40px 150px;
-    min-height: 492px;
+    min-height: 100vh;
 }
 
 .footer {

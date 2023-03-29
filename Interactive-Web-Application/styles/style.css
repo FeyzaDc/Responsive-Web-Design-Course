@@ -1,3 +1,21 @@
+.home .header {
+    font-size: 30px;
+}
+
+.home .main {
+    font-size: 30px;
+}
+
+
+.projects img {
+    width: 300px;
+    height: auto;
+}
+
+.projects div{
+    text-align: center;
+}
+
 .about-us {
     text-align: justify;
 }

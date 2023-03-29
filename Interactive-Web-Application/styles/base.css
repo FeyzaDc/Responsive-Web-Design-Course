@@ -3,6 +3,7 @@ body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     letter-spacing: 0.6px;
+    height: 100%;
 }
 
 a {
@@ -18,9 +19,8 @@ ul {
 }
 
 .navbar {
-    padding: 10px 0px;
-    box-shadow: rgba(56, 58, 59, 0.308) 0px 3px 5px;
-    display: flex;
+    padding: 20px 0px;
+    display: flex;                       /* displayed flex to position elements horizontally */
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -51,13 +51,12 @@ ul {
 }
 
 .container {
-    padding: 80px 150px 40px 150px;
-    height: 100vh;
+    padding: 100px 150px 40px 150px;
+    min-height: 100%;
 }
 
 .footer {
-    /* background-color: rgba(246, 246, 247, 0.89); */
-    background-color: #DBE2EF;
+    background: #DBE2EF;
     display: flex;
     justify-content: space-between;
     align-items: center;

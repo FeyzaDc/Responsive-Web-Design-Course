@@ -1,0 +1,28 @@
+body {
+    padding: 0 50px;
+}
+
+form {
+    font-size: 18px;
+}
+
+.row {
+    margin-bottom: 25px;
+    display: flex;
+    align-items: baseline;
+}
+
+label {
+    width: 100px;
+    display: block;
+}
+
+input, textarea {
+    outline: none;
+}
+
+button {
+    margin-left: 100px;
+    padding: 5px 20px;
+    cursor: pointer;
+}

@@ -6,9 +6,14 @@ label {
 
 input {
     margin-right: 5px;
+    outline: none;
 }
 
 input[type="submit"] {
     margin-left: 405px;
     margin-top: 10px;
+}
+
+.from {
+    text-indent: 5px;
 }

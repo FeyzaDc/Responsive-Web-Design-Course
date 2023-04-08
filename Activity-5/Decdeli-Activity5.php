@@ -14,7 +14,7 @@
 
     <form action="Decdeli-Activity5.php" method="post">
         <label>From: </label>
-        <input type="text" name="from" value="<?php 
+        <input type="text" name="from" class="from" value="<?php 
             if ($from = isset($_POST['from']) and !empty($_POST['from'])) 
                 echo $_POST['from'];
             else echo null;

@@ -1,0 +1,15 @@
+#myButton {
+    cursor: pointer;
+    padding: 20px 60px;
+    font-size: large;
+    background-color: rgb(133, 179, 59);
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+
+    position: absolute;
+}
+
+#myButton:hover {
+    opacity: 0.9;
+}

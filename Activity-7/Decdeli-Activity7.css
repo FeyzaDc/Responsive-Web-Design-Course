@@ -35,9 +35,3 @@ p {
 td {
 	width: 10em;
 }
-
-.list_span {
-    background-color: red;
-    display: flex;
-    justify-content: space-between;
-}

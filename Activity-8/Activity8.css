@@ -1,0 +1,23 @@
+html {
+    margin: 10px;
+}
+
+.form-element {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+label {
+    width: 250px;
+    display: block;
+}
+
+input {
+    margin-left: 10px;
+    outline: none;
+}
+
+input:invalid {
+    border: 1px solid rgb(202, 46, 46);
+    box-shadow: 0px 0px 1px 1px rgba(255, 0, 0, 0.253);
+}

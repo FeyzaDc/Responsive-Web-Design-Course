@@ -3,7 +3,9 @@ body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     letter-spacing: 0.6px;
-    height: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
 }
 
 a {
@@ -27,16 +29,7 @@ ul {
     width: 100%;
     background-color: #002E94;
     font-size: 15px;
-}
-
-.logo {
-    margin-left: 100px;
-    filter: invert(95%);
-}
-
-.logo img {
-    width: 38px;
-    height: 38px;
+    z-index: 100;
 }
 
 .navbar ul li a {
@@ -50,9 +43,18 @@ ul {
     transition: 0.3s;
 }
 
+.logo {
+    margin-left: 100px;
+    filter: invert(95%);
+}
+
+.logo img {
+    width: 38px;
+    height: 38px;
+}
+
 .container {
-    padding: 100px 150px 40px 150px;
-    min-height: 100%;
+    padding: 100px 250px 40px 250px;
 }
 
 .footer {
@@ -61,7 +63,6 @@ ul {
     justify-content: space-between;
     align-items: center;
     padding: 5px 0 5px 100px;
-    bottom: 0;
     font-size: 14px;
 }
 

@@ -10,12 +10,16 @@
 
     <!-- css files imported -->
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/style.css">
+
     <!-- google font imported -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Rubik:wght@300&display=swap"
         rel="stylesheet">
+
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery-ui.js"></script>
+    <script src="script.js"></script>
 
     <title>Home</title>
 </head>
@@ -33,21 +37,18 @@
         </ul>
     </nav>
 
-    <!-- main part created here -->
     <!-- container class will be used in common on all pages -->
-    <div class="container home">
-        <header class="header">
-            <h1>Join Us !</h1>
-        </header>
+    <div class="container">
+        <h2>Home</h2>
 
-        <section class="main">
+        <div class="content">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quo iure consequuntur, repellat
                 saepe enim voluptatum omnis doloribus sapiente non pariatur ipsam ipsum natus ullam, voluptate.
             </p>
-        </section>
+        </div>        
     </div>
 
-    <!-- footer is common element and does not change. So, it is created outside of container-->
+    <!-- common footer created -->
     <footer class="footer">
         <p>Copyright © 2023. All Rights Reserved By Fez</p>
         <ul>

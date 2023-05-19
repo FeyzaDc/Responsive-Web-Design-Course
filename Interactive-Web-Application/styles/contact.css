@@ -1,0 +1,47 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.form-row{
+    display: flex;
+    justify-content: end;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    width: 100%;
+    margin-right: 20px;
+    outline: none;
+    padding: 12px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    display: block;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    background-color: #002f94;
+    border: 0;
+    width: 150px;    
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.map {
+    border: 0;
+    width: 100%;
+    height: 250px;
+    margin-bottom: 50px;
+}

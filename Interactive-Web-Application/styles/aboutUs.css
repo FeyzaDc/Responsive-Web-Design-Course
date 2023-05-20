@@ -1,0 +1,11 @@
+.content {
+    text-align: justify;
+}
+
+.show-more {
+    color: #0b55dd;
+}
+
+.show-more:hover {
+    text-decoration: underline;
+}

@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/contact.css">
-    
+    <link rel="stylesheet" href="jquery/jquery-ui.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Rubik:wght@300&display=swap"
@@ -17,12 +18,12 @@
     <script src="jquery/jquery.js"></script>
     <script src="jquery/jquery-ui.js"></script>
     <script src="script.js"></script>
-    
+
     <title>Contact</title>
 </head>
 
 <body>
-    
+
     <nav class="navbar">
         <a class="logo" href="index.html"><img src="assets/logo.png" alt=""></a>
         <ul>
@@ -37,7 +38,7 @@
         <h2>Contact Us</h2>
 
         <div class="content">
-            <form action="" method="">
+            <form id="myform" method="" action="">
                 <p>You can send your questions, requests or feedback by filling out the fields below. We will get back
                     to you as soon as possible!</p>
 
@@ -48,7 +49,8 @@
 
                 <div class="form-row">
                     <input type="email" id="email" name="email" placeholder="Email" required>
-                    <input type="text" id="phone" name="phone" placeholder="Phone" required>
+                    <input type="text" id="phone" name="phone" placeholder="Phone"
+                        pattern="[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" required>
                 </div>
 
                 <div class="form-row">
@@ -57,7 +59,7 @@
                 </div>
 
                 <div class="form-row">
-                    <input type="submit" value="Send">
+                    <input id="submit-form" type="submit" value="Send">
                 </div>
             </form>
 
@@ -65,6 +67,10 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4324.257252480292!2d32.818550780744765!3d39.97019967270055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34c029ec9701b%3A0xfb0b0a3bf440a10a!2zQW5rYXJhIFnEsWxkxLFyxLFtIEJleWF6xLF0IMOcbml2ZXJzaXRlc2kgMTUgVGVtbXV6IMWeZWhpdGxlcmkgWWVybGXFn2tlc2k!5e0!3m2!1str!2str!4v1680078402639!5m2!1str!2str"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+        </div>
+
+        <div id="dialog" title="🔔 Message">
+            <p>✔️ Submitted successfully</p>
         </div>
 
     </div>
@@ -78,6 +84,10 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </footer>
+
+
 </body>
+
+
 
 </html>

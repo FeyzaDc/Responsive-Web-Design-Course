@@ -1,0 +1,35 @@
+body, html {
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+.navbar {
+    background: none;
+}
+
+.footer {
+    color: white;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+
+#countdown {
+    font-size: 20px;
+    margin-top: 80px;
+    font-size: 90px;
+    line-height: 100px;
+    max-width: 800px;
+}

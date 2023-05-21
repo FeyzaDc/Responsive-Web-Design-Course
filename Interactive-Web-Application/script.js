@@ -1,49 +1,62 @@
-// projects -- accordion
-
 $(document).ready(function () {
+
+  // navbar -- Scroll up bar Plugin
+  // https://plugins.jquery.com/scroll-up-bar/
+
+  $('#topbar').scrollupbar();
+
+
+  // Home -- Countdown Plugin, FadeThis Plugin
+  // https://plugins.jquery.com/countdown/
+  // https://plugins.jquery.com/fadethis/
+
+  $(window).fadeThis();
+
+  $('#countdown').countdown('2024/01/13', function (event) {
+    $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+  });
+
+
+  // Projects -- Accordion Widget
+  // https://jqueryui.com/accordion/
 
   $("#accordion").accordion({
     heightStyle: "content",
     collapsible: true
   });
 
-});
 
+  // About Us -- Show More Plugin
+  // https://plugins.jquery.com/show-more/
 
-// about us -- read more
-
-$(document).ready(function () {
-
-  var time = 300;
-  $('.show-more').css('cursor', 'grab');
-
-  if ($('.ty-compact-list').length > 3) {
-    $('.ty-compact-list:gt(2)').hide(time);
-    $('.show-more').show(time);
-  }
-
-  $('.show-more').on('click', function () {
-    $('.ty-compact-list:gt(2)').toggle(time);
-    $(this).text() === 'Read less ...' ? $(this).text('Read more ...') : $(this).text('Read less ...');
+  $('#about-content').showMore({
+    minheight: 350,
+    buttontxtmore: 'Read more...',
+    buttontxtless: 'Read less..',
+    buttoncss: 'show-more',
+    animationspeed: 500
   });
 
-});
+  $('.show-more').css('cursor', 'grab');
 
 
-// contact us -- submission alert
+  // Contact -- Dialog Widget
+  // https://jqueryui.com/dialog/
 
-$(document).ready(function () {
   $('#dialog').hide();
 
   $('form').submit(function (event) {
 
     event.preventDefault();
+    var name = $("#name").val();
+    var surname = $("#surname").val();
 
-    $("#dialog").dialog({
-      open: function (event, ui) {
-        setTimeout("$('#dialog').dialog('close')", 4000);
-      }
-    });
+    $("#dialog").dialog().text("✔️ " + name + " " + surname + " your message submitted successfully");
+
+    setTimeout(function () {
+      window.location.reload();
+    }, 1500);
+
   });
 
 });

@@ -10,6 +10,7 @@
 
     <!-- css files imported -->
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/index.css">
 
     <!-- google font imported -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +20,10 @@
 
     <script src="jquery/jquery.js"></script>
     <script src="jquery/jquery-ui.js"></script>
+    <script src="jquery/scroll-up-bar.js"></script>
+    <script src="jquery/jquery.countdown.js"></script>
+    <script src="jquery/jquery.fadethis.js"></script>
+    <script src="jquery/jquery.show-more.js"></script>
     <script src="script.js"></script>
 
     <title>Home</title>
@@ -27,11 +32,11 @@
 <body>
 
     <!-- common navbar created -->
-    <nav class="navbar">
+    <nav id="topbar" class="navbar">
         <a class="logo" href="index.html"><img src="assets/logo.png" alt=""></a>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="products.html">Products</a></li>
             <li><a href="aboutUs.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -39,24 +44,17 @@
 
     <!-- container class will be used in common on all pages -->
     <div class="container">
-        <h2>Home</h2>
+        <div class="content slide-bottom">
 
-        <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quo iure consequuntur, repellat
-                saepe enim voluptatum omnis doloribus sapiente non pariatur ipsam ipsum natus ullam, voluptate.
-            </p>
+            <h1>Great things coming soon.</h1>
+
+            <div id="countdown"></div>
         </div>        
     </div>
 
     <!-- common footer created -->
     <footer class="footer">
         <p>Copyright © 2023. All Rights Reserved By Fez</p>
-        <ul>
-            <li><a href="index.html">Home &nbsp;&nbsp; |</a></li>
-            <li><a href="projects.html">Projects &nbsp;&nbsp; |</a></li>
-            <li><a href="aboutUs.html">About Us &nbsp;&nbsp; |</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
     </footer>
 
 </body>

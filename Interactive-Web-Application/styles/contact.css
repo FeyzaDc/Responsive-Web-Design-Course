@@ -21,15 +21,18 @@ input, textarea {
     outline: none;
     padding: 12px;
     border-radius: 3px;
-    border: 1px solid gray;
     display: block;
     font-size: 16px;
+    border: 1px solid white;
+    background: rgb(246, 247, 248);
 }
 
 input[type="submit"] {
-    background-color: #002f94;
+    /* background-color: #002f94; */
+    background: #5856cd;
     border: 0;
-    width: 150px;    
+    padding: 8px;
+    width: 50px;    
     color: white;
     cursor: pointer;
 }

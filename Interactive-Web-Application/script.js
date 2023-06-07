@@ -58,5 +58,24 @@ $(document).ready(function () {
     }, 1500);
 
   });
+});
 
+
+// Phone Formatter
+$(document).ready(function () {
+  $(window).load(function () {
+    var phones = [{
+      "mask": "### ### ## ##"
+    }];
+    $('#phone').inputmask({
+      mask: phones,
+      greedy: false,
+      definitions: {
+        '#': {
+          validator: "[0-9]",
+          cardinality: 1
+        }
+      }
+    });
+  });
 });

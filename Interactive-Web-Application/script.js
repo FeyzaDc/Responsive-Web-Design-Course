@@ -58,6 +58,30 @@ $(document).ready(function () {
     }, 1500);
 
   });
+
+  ///////////////////////////////////////
+  // Request to an external file
+  $.ajax({
+    url: 'header.txt',
+    success: function (data) {
+      $('.home-header h1').text(data);
+    },
+    error: function () {
+      $('.home-header h1').text('Error retrieving external data.');
+    }
+  });
+
+  // AJAX request to another website
+  var websiteRequest = new XMLHttpRequest();
+  websiteRequest.onreadystatechange = function () {
+    if (websiteRequest.readyState === 4 && websiteRequest.status === 200) {
+      var data = websiteRequest.responseText;
+      document.getElementById('about-content').innerHTML = data;
+    }
+  };
+  websiteRequest.open('GET', 'https://feyzadc.github.io/Responsive-Web-Design-Course/Activity-2/', true);
+  websiteRequest.send();
+
 });
 
 

@@ -29,8 +29,8 @@ $(document).ready(function () {
   // About Us -- Show More Plugin
   // https://plugins.jquery.com/show-more/
 
-  $('#about-content').showMore({
-    minheight: 350,
+  $('#read-info').showMore({
+    minheight: 55,
     buttontxtmore: 'Read more...',
     buttontxtless: 'Read less..',
     buttoncss: 'show-more',
@@ -79,7 +79,7 @@ $(document).ready(function () {
       document.getElementById('about-content').innerHTML = data;
     }
   };
-  websiteRequest.open('GET', 'https://feyzadc.github.io/Responsive-Web-Design-Course/Activity-2/', true);
+  websiteRequest.open('GET', 'https://feyzadc.github.io/Responsive-Web-Design-Course/ajax-web-content/', true);
   websiteRequest.send();
 
 });
